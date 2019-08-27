@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Inspiration Rewards</string>
+    <string name="stident_id">A20424771</string>
+    <string name="profile_name">profile Name</string>
+    <string name="rewarded_points_to_send">Rewarded points to send:</string>
+    <string name="comment">Comment</string>
+    <string name="enter_some_comment">Enter some comment</string>
+    <string name="_100">100</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="select_username">Select Username</string>
+    <string name="select_password">Select Password</string>
+    <string name="administrator_user">Administrator User</string>
+    <string name="enter_first_name">Enter First Name</string>
+    <string name="enter_last_name">Enter Last Name</string>
+    <string name="department">Department:</string>
+    <string name="select_department">Select Department</string>
+    <string name="position">Position:</string>
+    <string name="enter_your_position">Enter Your Position</string>
+    <string name="inspiration_leaderboard">Inspiration Leaderboard</string>
+    <string name="rewards">Rewards</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="remember_my_credentials">Remember my credentials</string>
+    <string name="tap_here_to_create_an_account">Tap here to create an account</string>
+    <string name="your_profile">Your Profile</string>
+    <string name="create_profile">Create Profile</string>
+    <string name="tell_us_something_about_yourself">Tell us something about yourself!</string>
+    <string name="points_awarded">Points Awarded:</string>
+    <string name="points_to_awarded">Points to Awarded</string>
+    <string name="your_story">Your Story:</string>
+    <string name="cancel">Cancel</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+    <string name="profile_picture">Profile Picture</string>
+    <string name="save_change">Save Changes?</string>
+    <string name="take_picture_from">Take picture from:</string>
+
+</resources>

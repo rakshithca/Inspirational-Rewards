@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_5">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_marginTop="@dimen/dp_3"
+        android:background="@drawable/separator" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/text_gray_color">
+
+        <TextView
+            android:id="@+id/dateTV"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_10"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_5"
+            android:textSize="@dimen/dp_18"
+            tools:text="31/03/2019" />
+
+        <TextView
+            android:id="@+id/nameTV"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_5"
+            android:layout_toLeftOf="@+id/rewardPointsTV"
+            android:layout_toRightOf="@+id/dateTV"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_5"
+            android:textSize="@dimen/dp_18"
+            android:textStyle="bold"
+            tools:text="Pavan, Reddy" />
+
+        <TextView
+            android:id="@+id/rewardPointsTV"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_5"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/dp_18"
+            android:textStyle="bold"
+            tools:text="9999" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/commentsTV"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/text_gray_color"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_5"
+        android:textSize="@dimen/dp_14"
+        tools:text="Good work on defect" />
+
+</LinearLayout>

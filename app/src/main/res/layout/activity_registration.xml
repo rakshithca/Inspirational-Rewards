@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:gravity="center_vertical"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/backIconIMG"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:src="@drawable/arrow_with_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_40"
+            android:text="@string/create_profile"
+            android:layout_toRightOf="@+id/backIconIMG"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:textSize="@dimen/dp_24"/>
+
+
+        <ImageView
+            android:id="@+id/saveIMG"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/download" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_profile_image"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:src="@drawable/logo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/usernameET"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@color/gray_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp_5"
+                android:hint="@string/select_username"
+                android:inputType="text"
+                android:maxLength="50"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/hint_color"
+                android:textSize="@dimen/dp_16" />
+
+
+            <EditText
+                android:id="@+id/studentIDET"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:background="@color/gray_bg"
+                android:gravity="center_vertical"
+                android:hint="Select Student ID"
+                android:paddingLeft="@dimen/dp_5"
+                android:inputType="textPassword"
+                android:maxLength="50"
+                android:visibility="gone"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/hint_color"
+                android:textSize="@dimen/dp_16" />
+
+            <EditText
+                android:id="@+id/passwordET"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:background="@color/gray_bg"
+                android:gravity="center_vertical"
+                android:hint="@string/select_password"
+                android:paddingLeft="@dimen/dp_5"
+                android:inputType="textPassword"
+                android:maxLength="50"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/hint_color"
+                android:textSize="@dimen/dp_16" />
+
+
+            <CheckBox
+                android:id="@+id/adminCB"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_30"
+                android:textColor="@color/text_color"
+                android:buttonTint="@color/text_color"
+                android:text="@string/administrator_user"
+                android:layout_marginBottom="@dimen/dp_10"/>
+
+
+            <EditText
+                android:id="@+id/firstNameET"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@color/gray_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp_5"
+                android:hint="@string/enter_first_name"
+                android:inputType="text"
+                android:maxLength="50"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/hint_color"
+                android:textSize="@dimen/dp_16" />
+
+            <EditText
+                android:id="@+id/lastNameET"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@color/gray_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp_5"
+                android:hint="@string/enter_last_name"
+                android:inputType="text"
+                android:maxLength="50"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/hint_color"
+                android:textSize="@dimen/dp_16" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:text="@string/department"
+            android:textSize="@dimen/dp_18"
+            android:layout_weight="1"/>
+        <EditText
+            android:id="@+id/departmentET"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="40dp"
+            android:background="@color/gray_bg"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_5"
+            android:hint="@string/select_department"
+            android:inputType="text"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/hint_color"
+            android:textSize="@dimen/dp_16" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:text="@string/position"
+            android:textSize="@dimen/dp_18"
+            android:layout_weight="1"/>
+        <EditText
+            android:id="@+id/positionET"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="40dp"
+            android:background="@color/gray_bg"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_5"
+            android:hint="@string/enter_your_position"
+            android:inputType="text"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/hint_color"
+            android:textSize="@dimen/dp_16" />
+    </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_40"
+                android:textSize="@dimen/dp_18"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:text="@string/your_story"/>
+
+
+            <EditText
+                android:id="@+id/yourStoryET"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/gray_bg"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginBottom="@dimen/dp_20"
+                android:padding="@dimen/dp_5"
+                android:hint="@string/tell_us_something_about_yourself"
+                android:inputType="textMultiLine"
+                android:gravity="top|left"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/hint_color"
+                android:textSize="@dimen/dp_16" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.inspiration.inspirationrewards.activity.LeaderBoardActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:gravity="center_vertical"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/backIconIMG"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:src="@drawable/arrow_with_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_40"
+            android:text="@string/inspiration_leaderboard"
+            android:layout_toRightOf="@+id/backIconIMG"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:textSize="@dimen/dp_20"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/leaderBoardLV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:divider="@null"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/background"/>
+
+
+</LinearLayout>

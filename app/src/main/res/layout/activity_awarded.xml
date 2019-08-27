@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context="com.inspiration.inspirationrewards.activity.AwardedActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/backIconIMG"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:src="@drawable/icon" />
+
+        <TextView
+            android:id="@+id/profileNameTV"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_toRightOf="@+id/backIconIMG"
+            android:gravity="center_vertical"
+            android:text="@string/profile_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp_24" />
+
+
+        <ImageView
+            android:id="@+id/saveIMG"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/download" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                layout="@layout/profilepage_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_30"
+                    android:textSize="@dimen/dp_18"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:textColor="@color/text_gray_dark_color"
+                    android:text="@string/rewarded_points_to_send"/>
+
+                <EditText
+                    android:id="@+id/rewardPointsET"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/gray_bg"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:paddingLeft="@dimen/dp_5"
+                    android:hint="@string/_100"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:textColor="@color/text_gray_dark_color"
+                    android:textColorHint="@color/text_gray_color"
+                    android:textSize="@dimen/dp_16" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textCountTV"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_30"
+                android:textSize="@dimen/dp_18"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:textColor="@color/text_gray_dark_color"
+                android:text="@string/comment"/>
+
+            <EditText
+                android:id="@+id/commentET"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/gray_bg"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginBottom="@dimen/dp_20"
+                android:padding="@dimen/dp_5"
+                android:hint="@string/enter_some_comment"
+                android:inputType="textMultiLine"
+                android:gravity="top|left"
+                android:maxLength="80"
+                android:textColor="@color/text_gray_dark_color"
+                android:textColorHint="@color/text_gray_color"
+                android:textSize="@dimen/dp_16" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

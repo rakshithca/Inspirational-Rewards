@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_marginTop="@dimen/dp_14"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/fullnameTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_toLeftOf="@+id/userNameTV"
+        android:textColor="@color/text_gray_dark_color"
+        android:textSize="@dimen/dp_24"
+        android:textStyle="bold"
+        tools:text="Blakenship, Jacqulyn" />
+
+
+    <TextView
+        android:id="@+id/userNameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dp_18"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/text_gray_dark_color"
+        android:layout_marginRight="@dimen/dp_10"
+        tools:text="(user 789)"/>
+
+
+</RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/addressTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dp_18"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/text_gray_dark_color"
+        android:layout_marginLeft="@dimen/dp_10"
+        tools:text="Seattle, WA 98104"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_10"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_profile_image"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:src="@drawable/logo" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/dp_18"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/text_gray_dark_color"
+                        android:text="@string/points_awarded"/>
+
+                    <TextView
+                        android:id="@+id/pointsAwardedTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/dp_24"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/text_gray_dark_color"
+                        tools:text="0"
+                        android:layout_marginLeft="@dimen/dp_10"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/dp_18"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/text_gray_dark_color"
+                        android:text="@string/department"/>
+
+                    <TextView
+                        android:id="@+id/departmentTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:textColor="@color/text_gray_dark_color"
+                        android:textSize="@dimen/dp_24"
+                        android:textStyle="bold"
+                        tools:text="Human Resources" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/dp_18"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/text_gray_dark_color"
+                        android:text="@string/position"/>
+
+                    <TextView
+                        android:id="@+id/positionTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:textColor="@color/text_gray_dark_color"
+                        android:textSize="@dimen/dp_24"
+                        android:textStyle="bold"
+                        tools:text="HR Specialist" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/dp_18"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/text_gray_dark_color"
+                        android:text="@string/points_to_awarded"/>
+
+                    <TextView
+                        android:id="@+id/pointsToAwardedTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/dp_24"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/text_gray_dark_color"
+                        tools:text="560"
+                        android:layout_marginLeft="@dimen/dp_10"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_30"
+                android:textSize="@dimen/dp_18"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:textColor="@color/text_gray_dark_color"
+                android:text="@string/your_story"/>
+
+    <TextView
+        android:id="@+id/yourstoryET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_3"
+        android:background="@color/gray_bg"
+        android:gravity="top|left"
+        android:padding="@dimen/dp_5"
+        android:textColor="@color/text_gray_dark_color"
+        android:textSize="@dimen/dp_16"
+        tools:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." />
+
+    <TextView
+        android:id="@+id/rewardsHistoryTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dp_18"
+        android:textColor="@color/text_gray_dark_color"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_3"
+        tools:text="Rewarded History(5)"/>
+
+</LinearLayout>

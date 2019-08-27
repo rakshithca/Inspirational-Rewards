@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/userIMG"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/logo"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_5">
+
+            <TextView
+                android:id="@+id/nameTV"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:textSize="@dimen/dp_18"
+                android:textStyle="bold"
+                android:layout_marginRight="@dimen/dp_5"
+                android:layout_toLeftOf="@+id/rewardPointsTV"
+                android:paddingLeft="@dimen/dp_5"
+                android:gravity="center_vertical"
+                tools:text="Pavan, Reddy"/>
+            <TextView
+                android:id="@+id/rewardPointsTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                tools:text="9999"
+                android:layout_marginRight="@dimen/dp_5"
+                android:textSize="@dimen/dp_18"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/postionDepartmentTV"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_5"
+            android:layout_marginTop="@dimen/dp_5"
+            tools:text="Position, Department"
+            android:textSize="@dimen/dp_14"/>
+    </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_marginTop="@dimen/dp_3"
+        android:background="@drawable/separator"/>
+</LinearLayout>
